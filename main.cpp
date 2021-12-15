@@ -1,6 +1,7 @@
 #include <limits>
 #include <iostream>
 #include <fstream>
+#include "func.h" 
 using namespace std;
 
 int main ()
@@ -10,19 +11,12 @@ int main ()
 
     do
     {
-        int    PrintSize, sheetSize ;
-        //system ("cls");
-        system ("clear");     //for linux
-        
-        ifstream print_size("print_size.txt");
-        if (print_size.is_open()){
-            cout << print_size.rdbuf();
-        }
-        
-        cin >> PrintSize;
-        cout << PrintSize;
-        cout << ";alkdflfj";
-         
+        int PrintSize,
+	    sheetSize ;
+
+	clear(); //clear screen
+
+        tui("tui/print_size.txt");
         
         
         
@@ -37,14 +31,10 @@ int main ()
         
         cout<< "Press ENTER to continue" <<endl;
         enter=getchar();
-        //system ("cls");
-        system ("clear");     //for linux
+
+	clear(); //clear screen
         
     } while (enter == '\n');
     
-
-
-
-       
     return 0;
 }
