@@ -1,40 +1,36 @@
-#include <limits>
 #include <iostream>
 #include <fstream>
-#include "func.h" 
-using namespace std;
+#include "headers/func.h" 
 
 int main ()
 {
     char    enter = 0 ;
     double  rate, ordreSize ;
 
-    do
-    {
-        int PrintSize,
-	    sheetSize ;
+	int PrintSize = get_option("tui/print_size.txt");
+	std::cout << PrintSize << std::endl;
 
-	clear(); //clear screen
+	int SheetSize = get_option("tui/sheet_size.txt");
+	std::cout << SheetSize << std::endl;
 
-        tui("tui/print_size.txt");
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        cout<< "Press ENTER to continue" <<endl;
-        enter=getchar();
-
-	clear(); //clear screen
-        
-    } while (enter == '\n');
+//    do
+//    {
+//        
+//        
+//        
+//        
+//        
+//        
+//        
+//        
+//        
+//        
+//	std::cout<< "Press ENTER to continue" << std::endl;
+//        enter=getchar();
+//
+//	clear(); //clear screen
+//        
+//    } while (enter == '\n');
     
     return 0;
 }
