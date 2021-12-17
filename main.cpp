@@ -1,6 +1,6 @@
 #include <iostream>
 #include <fstream>
-#include "headers/func.h" 
+#include "header/func.h" 
 
 int main ()
 {
