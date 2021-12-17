@@ -2,6 +2,8 @@
 #endif 
 #ifdef linux
 #endif 
+
+//////////////////////////////////////////
 // clear
 void clear() {
 
@@ -14,6 +16,7 @@ void clear() {
 #endif 
 }
 
+//////////////////////////////////////////
 // tui
 void tui(std::string txtpath) {
 
@@ -24,6 +27,7 @@ void tui(std::string txtpath) {
   }
 }
 
+//////////////////////////////////////////
 // user input
 int get_option(std::string txtpath) {
 
@@ -36,3 +40,5 @@ int get_option(std::string txtpath) {
   clear(); // clear screen
   return PrintSize;
 }
+
+//////////////////////////////////////////
