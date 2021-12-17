@@ -4,7 +4,8 @@
 #endif 
 
 //////////////////////////////////////////
-// clear
+// clear console
+
 void clear() {
 
 #ifdef _WIN32
@@ -17,7 +18,8 @@ void clear() {
 }
 
 //////////////////////////////////////////
-// tui
+// tui - terminal user interface
+
 void tui(std::string txtpath) {
 
   std::ifstream getui(txtpath);
@@ -27,8 +29,8 @@ void tui(std::string txtpath) {
   }
 }
 
-//////////////////////////////////////////
-// user input
+// user input ///////////////////////////
+
 int get_option(std::string txtpath) {
 
   clear(); // clear screen
@@ -41,4 +43,15 @@ int get_option(std::string txtpath) {
   return PrintSize;
 }
 
-//////////////////////////////////////////
+bool get_enter() {
+
+	bool status = false;
+        std::cout<< "Press ENTER to continue" << std::endl;
+        char enter = getchar();
+	if(enter == '\n') {
+		status = true;
+	}
+	return status;
+}
+
+/////////////////////////////////////////

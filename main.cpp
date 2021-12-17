@@ -10,16 +10,18 @@ int main ()
     do
     {
         
-	int PrintSize = get_option("tui/print_size.txt");
+	const int PrintSize = get_option("tui/print_size.txt");
 
-	int SheetSize = get_option("tui/sheet_size.txt");
+	const int SheetSize = get_option("tui/sheet_size.txt");
+
+	if (PrintSize == 1 && SheetSize ==1){
+		std::cout << "ONE";
+	} else {
+		std::cout << "NOT ONE";
+	}
         
 
-
-        std::cout<< "Press ENTER to continue" << std::endl;
-        enter = getchar();
-
-    } while (enter == '\n');
+    } while (get_enter());
   
   return 0;
 }
