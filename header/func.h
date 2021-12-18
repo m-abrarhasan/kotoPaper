@@ -5,8 +5,7 @@
 #include <fstream>
 #include <iostream>
 
-//////////////////////////////////////////
-// clear console
+/// clear console //////////////////////
 
 void clear() {
 
@@ -19,31 +18,24 @@ void clear() {
 #endif
 }
 
-//////////////////////////////////////////
-// tui - terminal user interface
+// getui ///////////////////////////////
 
-void tui(std::string txtpath) {
+int getui(std::string txtpath) {
 
-  std::ifstream getui(txtpath);
+  clear();
 
-  if (getui.is_open()) {
-    std::cout << getui.rdbuf();
+  std::ifstream tui(txtpath);
+
+  if (tui.is_open()) {
+    std::cout << tui.rdbuf();
   }
+
+  int x;
+  std::cin >> x;
+  return x;
 }
 
-// user input ///////////////////////////
-
-int get_option(std::string txtpath) {
-
-  clear(); // clear screen
-
-  int PrintSize;
-  tui(txtpath);
-  std::cin >> PrintSize;
-
-  clear(); // clear screen
-  return PrintSize;
-}
+// get_enter ///////////////////////////
 
 bool get_enter() {
 
