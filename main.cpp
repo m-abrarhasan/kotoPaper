@@ -1,27 +1,21 @@
-#include <iostream>
+#include "header/func.h"
 #include <fstream>
-#include "header/func.h" 
+#include <iostream>
 
-int main ()
-{
-    char    enter = 0;
-    double  rate, ordreSize;
+int main() {
+  char enter = 0;
+  double rate, ordreSize;
 
-    do
-    {
-        
-	const int PrintSize = get_option("tui/print_size.txt");
+  do {
 
-	const int SheetSize = get_option("tui/sheet_size.txt");
+    //user input
+    const int pr = get_option("tui/print_size.txt");
+    const int sh = get_option("tui/sheet_size.txt");
 
-	if (PrintSize == 1 && SheetSize ==1){
-		std::cout << "ONE";
-	} else {
-		std::cout << "NOT ONE";
-	}
-        
+    //output
 
-    } while (get_enter());
-  
+
+  } while (get_enter());
+
   return 0;
 }

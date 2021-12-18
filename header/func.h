@@ -1,7 +1,9 @@
 #ifdef _WIN32
-#endif 
+#endif
 #ifdef linux
-#endif 
+#endif
+#include <fstream>
+#include <iostream>
 
 //////////////////////////////////////////
 // clear console
@@ -9,12 +11,12 @@
 void clear() {
 
 #ifdef _WIN32
-	system("cls");
-#endif 
+  system("cls");
+#endif
 
 #ifdef linux
-	system("clear");
-#endif 
+  system("clear");
+#endif
 }
 
 //////////////////////////////////////////
@@ -45,13 +47,13 @@ int get_option(std::string txtpath) {
 
 bool get_enter() {
 
-	bool status = false;
-        std::cout<< "Press ENTER to continue" << std::endl;
-        char enter = getchar();
-	if(enter == '\n') {
-		status = true;
-	}
-	return status;
+  bool status = false;
+  std::cout << "Press ENTER to continue" << std::endl;
+  char enter = getchar();
+  if (enter == '\n') {
+    status = true;
+  }
+  return status;
 }
 
 /////////////////////////////////////////
