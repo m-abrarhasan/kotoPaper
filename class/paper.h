@@ -5,6 +5,8 @@ public:
 	float width  = {0.0};
 	float height = {0.0};
 	
-	makePaper( float width,
-	           float height);
+	paper( float W, float H) { 
+		width  = W;
+		height = H;
+	}
 };
