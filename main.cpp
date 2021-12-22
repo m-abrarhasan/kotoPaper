@@ -9,10 +9,10 @@ int main() {
   do {
 
     // user input
-    const int ps = getui("tui/print_size.txt");
-    const int ss = getui("tui/sheet_size.txt");
-    const int pr = getui("tui/paper_rate.txt");
-    const int os = getui("tui/order_size.txt");
+    const int print_size = getui("tui/print_size.txt");
+    const int sheet_size = getui("tui/sheet_size.txt");
+    const int paper_rate = getui("tui/paper_rate.txt");
+    const int order_size = getui("tui/order_size.txt");
 
     // output
 
