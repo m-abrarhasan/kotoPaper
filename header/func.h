@@ -47,4 +47,3 @@ bool get_enter() {
   }
   return status;
 }
-
