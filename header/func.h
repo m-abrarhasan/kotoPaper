@@ -29,21 +29,41 @@ int getui(std::string txtpath) {
   if (tui.is_open()) {
     std::cout << tui.rdbuf();
   }
+  int _in;
+  std::cin >> _in;
 
-  int x;
-  std::cin >> x;
-  return x;
+  clear();
+  return _in;
+}
+
+// putui ///////////////////////////////
+void putui(double total_sheet, double total_cost, std::string txtpath) {
+
+  std::ifstream tui(txtpath);
+
+  if (tui.is_open()) {
+    std::cout << tui.rdbuf();
+  }
+  double _total_sheet = total_sheet;
+  double _total_cost = total_cost;
+
+  std::cout << "|| >> Sheet Needed = " << _total_sheet << "\n";
+  std::cout << "|| >> Sheet Cost   = " << _total_cost << "\n";
+
+  return;
 }
 
 // get_enter ///////////////////////////
-
 bool get_enter() {
 
   bool status = false;
-  std::cout << "Press ENTER to continue" << std::endl;
+
+  std::cout << "\n\n\nPress Enter to Continue........." << std::endl;
+
+  getchar();
   char enter = getchar();
-  if (enter == '\n') {
-    status = true;
-  }
+
+  if (enter == '\n') status = true;
+
   return status;
 }
