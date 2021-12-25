@@ -14,11 +14,11 @@ class paper {
 
 // Sheets (width, height)
 paper double_demy(23.00, 36.00);
-paper half_demy(23.00, 18.00);
+paper half_demy(18.00, 23.00);
 
 // Prints 
 paper one_4(8.50, 11.25);
-paper one_8(23.00, 36.00);
+paper one_8(5.50, 8.50);
 // Custom 
 
 
