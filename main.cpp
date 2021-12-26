@@ -15,7 +15,7 @@ int main() {
 
     // calculation
     double total_sheet = get_sheet(print_size, sheet_size, order_size);
-    double total_cost  = get_cost(total_sheet, paper_rate);
+    double total_cost = get_cost(total_sheet, paper_rate);
 
     // output
     putui(total_sheet, total_cost, "tui/total.txt");

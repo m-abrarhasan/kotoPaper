@@ -19,7 +19,6 @@ void clear() {
 }
 
 // getui ///////////////////////////////
-
 int getui(std::string txtpath) {
 
   clear();
@@ -63,7 +62,8 @@ bool get_enter() {
   getchar();
   char enter = getchar();
 
-  if (enter == '\n') status = true;
+  if (enter == '\n')
+    status = true;
 
   return status;
 }
