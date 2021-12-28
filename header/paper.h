@@ -10,14 +10,15 @@ public:
   paper(double W, double H) { area = W * H; }
 };
 
-// Sheets (width, height)
+// Sheets        (width, height)
 paper double_demy(23.00, 36.00);
 paper half_demy(18.00, 23.00);
+// paper art_paper(18.00, 23.00);
+// paper art_paper(18.00, 23.00);
 
-// Prints
-paper one_4(8.50, 11.25);
-paper one_8(5.50, 8.50);
-// Custom
+// Prints  (width, height)
+paper one_4(09.00, 11.50);
+paper one_8(5.75, 09.00);
 
 double print_area(int print_size) {
 

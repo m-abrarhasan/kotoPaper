@@ -9,7 +9,11 @@ int main() {
 
     // user input
     const int print_size = getui("tui/print_size.txt");
+    // check for custom
+
     const int sheet_size = getui("tui/sheet_size.txt");
+    // check for custom
+
     const int paper_rate = getui("tui/paper_rate.txt"); // Per Ream
     const int order_size = getui("tui/order_size.txt");
 
