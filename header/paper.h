@@ -22,25 +22,29 @@ paper one_8(5.75, 09.00);
 
 double print_area(int print_size) {
 
-  int _print_size = print_size;
-  double _area;
-
-  if (_print_size == 1)
-    _area = one_4.area;
-  if (_print_size == 2)
-    _area = one_8.area;
-  return _area;
+  switch (print_size) {
+  case 1:
+    return one_4.area;
+    break;
+  case 2:
+    return one_8.area;
+    break;
+  default:
+    break;
+  }
 }
 double sheet_area(int sheet_size) {
 
-  int _sheet_size = sheet_size;
-  double _area;
-
-  if (_sheet_size == 1)
-    _area = double_demy.area;
-  if (_sheet_size == 2)
-    _area = half_demy.area;
-  return _area;
+  switch (sheet_size) {
+  case 1:
+    return double_demy.area;
+    break;
+  case 2:
+    return half_demy.area;
+    break;
+  default:
+    break;
+  }
 }
 double get_sheet(int print_size, int sheet_size, int order_size) {
 
