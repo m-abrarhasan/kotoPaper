@@ -48,9 +48,7 @@ double sheet_area(int sheet_size) {
 }
 double get_sheet(int print_size, int sheet_size, int order_size) {
 
-  double _print_area = print_area(print_size);
-  double _sheet_area = sheet_area(sheet_size);
-  return order_size / (_sheet_area / _print_area);
+  return order_size / (sheet_area(sheet_size) / print_area(print_size));
 }
 double get_cost(double total_sheet, int paper_rate) {
 
