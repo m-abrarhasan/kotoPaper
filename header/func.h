@@ -55,15 +55,12 @@ void putui(double total_sheet, double total_cost, std::string txtpath) {
 // get_enter ///////////////////////////
 bool get_enter() {
 
-  bool status = false;
-
   std::cout << "\n\n\nPress Enter to Continue........." << std::endl;
-
   getchar();
   char enter = getchar();
 
   if (enter == '\n')
-    status = true;
-
-  return status;
+    return true;
+  else
+    return false;
 }
