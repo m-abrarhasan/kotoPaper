@@ -78,8 +78,4 @@ bool get_enter() {
     return true;
   else
     return false;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 7208c617224a37fb2a5c92441946c49c31dcd828
