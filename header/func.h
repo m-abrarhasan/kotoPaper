@@ -18,36 +18,51 @@ void clear() {
 #endif
 }
 
-// getui ///////////////////////////////
-int getui(std::string txtpath) {
+/*** getui_op  **********/
+int getui_op(std::string txtpath) {
 
   clear();
-
   std::ifstream tui(txtpath);
+  if (tui.is_open()) {
+    std::cout << tui.rdbuf();
+  }
+  int _in;
 
+label:
+  std::cin >> _in;
+  if (_in < 1 || _in > 5) {
+    std::cout << "Wrong Input! Please Enter Again  > ";
+    goto label;
+  }
+  clear();
+
+  return _in;
+}
+
+/*** getui_num  **********/
+int getui_num(std::string txtpath) {
+
+  clear();
+  std::ifstream tui(txtpath);
   if (tui.is_open()) {
     std::cout << tui.rdbuf();
   }
   int _in;
   std::cin >> _in;
-
   clear();
+
   return _in;
 }
 
-// putui ///////////////////////////////
+/*** putui **********/
 void putui(double total_sheet, double total_cost, std::string txtpath) {
 
   std::ifstream tui(txtpath);
-
   if (tui.is_open()) {
     std::cout << tui.rdbuf();
   }
-  double _total_sheet = total_sheet;
-  double _total_cost = total_cost;
-
-  std::cout << "|| >> Sheet Needed = " << _total_sheet << "\n";
-  std::cout << "|| >> Sheet Cost   = " << _total_cost << "\n";
+  std::cout << "|| >> Sheet Needed = " << total_sheet << "\n";
+  std::cout << "|| >> Sheet Cost   = " << total_cost << "\n";
 
   return;
 }
@@ -63,4 +78,8 @@ bool get_enter() {
     return true;
   else
     return false;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7208c617224a37fb2a5c92441946c49c31dcd828
