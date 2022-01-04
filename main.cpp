@@ -8,14 +8,14 @@ int main() {
   do {
 
     // user input
-    const int print_size = getui("tui/print_size.txt");
+    const int print_size = getui_op("tui/print_size.txt");
     // check for custom
 
-    const int sheet_size = getui("tui/sheet_size.txt");
+    const int sheet_size = getui_op("tui/sheet_size.txt");
     // check for custom
 
-    const int paper_rate = getui("tui/paper_rate.txt"); // Per Ream
-    const int order_size = getui("tui/order_size.txt");
+    const int paper_rate = getui_num("tui/paper_rate.txt"); // Per Ream
+    const int order_size = getui_num("tui/order_size.txt");
 
     // calculation
     double total_sheet = get_sheet(print_size, sheet_size, order_size);

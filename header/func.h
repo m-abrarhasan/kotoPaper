@@ -18,8 +18,29 @@ void clear() {
 #endif
 }
 
-// getui ///////////////////////////////
-int getui(std::string txtpath) {
+/*** getui_op  **********/
+int getui_op(std::string txtpath) {
+
+  clear();
+  std::ifstream tui(txtpath);
+  if (tui.is_open()) {
+    std::cout << tui.rdbuf();
+  }
+  int _in;
+
+label:
+  std::cin >> _in;
+  if (_in < 1 || _in > 5) {
+    std::cout << "Wrong Input! Please Enter Again  > ";
+    goto label;
+  }
+  clear();
+
+  return _in;
+}
+
+/*** getui_num  **********/
+int getui_num(std::string txtpath) {
 
   clear();
   std::ifstream tui(txtpath);
@@ -33,7 +54,7 @@ int getui(std::string txtpath) {
   return _in;
 }
 
-// putui ///////////////////////////////
+/*** putui **********/
 void putui(double total_sheet, double total_cost, std::string txtpath) {
 
   std::ifstream tui(txtpath);
