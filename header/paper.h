@@ -30,7 +30,7 @@ double print_area(int print_size) {
     return one_8.area;
     break;
   default:
-    break;
+    return 0;
   }
 }
 double sheet_area(int sheet_size) {
@@ -43,7 +43,7 @@ double sheet_area(int sheet_size) {
     return half_demy.area;
     break;
   default:
-    break;
+    return 0;
   }
 }
 double get_sheet(int print_size, int sheet_size, int order_size) {

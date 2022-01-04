@@ -31,8 +31,14 @@ int getui_op(std::string txtpath) {
 label:
   std::cin >> _in;
   if (_in < 1 || _in > 5) {
-    std::cout << "Wrong Input! Please Enter Again  > ";
-    goto label;
+    if (_in == 6) {
+      std::cout << "goto constructor for paper area" << std::endl;
+      getchar();
+      getchar();
+    } else {
+      std::cout << "Wrong Input! Please Enter Again  > ";
+      goto label;
+    }
   }
   clear();
 
