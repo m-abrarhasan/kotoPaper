@@ -1,5 +1,3 @@
 kotoPaper
 ==========================================
-kotoPaper is an application to quickly
-calculate the required materials and costs
-for individual orders in a Print Shop.
+kotoPaper is a program that I created for the purpose of calculating the required materials and costs for individual orders in a Print Shop.
