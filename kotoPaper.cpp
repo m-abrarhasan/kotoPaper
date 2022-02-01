@@ -1,8 +1,4 @@
-#include "header/func.h"
-#include "header/paper.h"
-#include <fstream>
-#include <iostream>
-
+#include "kotoPaper.h"
 int main() {
 
   do {
