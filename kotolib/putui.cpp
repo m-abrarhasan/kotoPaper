@@ -1,4 +1,4 @@
-#include "kotolib.h"
+#include "../header/kotolib.h"
 
 void putui(double total_sheet, double total_cost, std::string txtpath) {
 

@@ -1,4 +1,4 @@
-#include "kotolib.h"
+#include "../header/kotolib.h"
 
 int getui_num(std::string txtpath) {
 

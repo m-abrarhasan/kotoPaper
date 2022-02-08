@@ -1,3 +1,6 @@
+#ifndef KOTOLIB_H
+#define KOTOLIB_H
+
 #include "paper.h"
 #include <fstream>
 #include <iostream>
@@ -12,3 +15,5 @@ int getui_num(std::string txtpath);
 
 // output funtions
 void putui(double total_sheet, double total_cost, std::string txtpath);
+
+#endif // KOTOLIB_H
