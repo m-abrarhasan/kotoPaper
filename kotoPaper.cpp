@@ -1,4 +1,5 @@
-#include "kotoPaper.h"
+#include "header/kotolib.h"
+
 int main() {
 
   do {
