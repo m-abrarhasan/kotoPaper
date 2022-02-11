@@ -1,4 +1,4 @@
-#include "header/kotolib.h"
+#include "kotolib.h"
 
 int main() {
 

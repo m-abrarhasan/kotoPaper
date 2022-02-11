@@ -1,5 +1,3 @@
-#include "../header/kotolib.h"
-
 // Clears The Console
 void clear() {
 

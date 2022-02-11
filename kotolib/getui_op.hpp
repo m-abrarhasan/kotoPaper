@@ -1,5 +1,3 @@
-#include "../header/kotolib.h"
-
 int getui_op(std::string txtpath) {
 
   clear();
