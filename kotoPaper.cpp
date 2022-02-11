@@ -1,5 +1,5 @@
-#include <iostream>
 #include "kotolib.h"
+#include <iostream>
 
 int main() {
 
