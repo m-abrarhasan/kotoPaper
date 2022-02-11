@@ -1,3 +1,6 @@
+#pragma once
+#include <iostream>
+
 // Clears The Console
 void clear() {
 

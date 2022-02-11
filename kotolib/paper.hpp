@@ -1,5 +1,5 @@
-#ifndef PAPER_H
-#define PAPER_H
+#pragma once
+#include <iostream>
 
 class paper {
 
@@ -52,5 +52,3 @@ double get_cost(double total_sheet, int paper_rate) {
 
   return total_sheet * (paper_rate / 500); // 500 Sheets = to 1 Ream
 }
-
-#endif

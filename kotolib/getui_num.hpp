@@ -1,3 +1,7 @@
+#pragma once
+#include <iostream>
+#include <fstream>
+
 int getui_num(std::string txtpath) {
 
   clear();

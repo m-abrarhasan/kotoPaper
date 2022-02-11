@@ -1,5 +1,8 @@
+#pragma once
+#include <iostream>
+
 bool get_enter() {
-  std::cout << "\n\n\nPress Enter to Continue........." << std::endl;
+  std::cout << "\n\n\n||> Press Enter to Continue <||" << std::endl;
   getchar();
   char enter = getchar();
 

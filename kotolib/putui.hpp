@@ -1,3 +1,5 @@
+#pragma once
+#include <iostream>
 void putui(double total_sheet, double total_cost, std::string txtpath) {
 
   std::ifstream tui(txtpath);
