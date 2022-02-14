@@ -1,14 +1,13 @@
 #pragma once
 #include <iostream>
 
-bool get_enter() {
-  std::cout << "\n\n\n||> Press Enter to Continue <||" << std::endl;
+bool get_enter(std::string _prompt = "") {
+  std::cout << _prompt;
   getchar();
   char enter = getchar();
 
-  if (enter == '\n') {
+  if (enter == '\n')
     return true;
-  } else {
+  else
     return false;
-  }
 }
