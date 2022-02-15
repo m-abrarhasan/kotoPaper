@@ -9,4 +9,8 @@ void clear() {
 #ifdef linux
   system("clear");
 #endif
+
+#ifdef __APPLE__
+  system("clear");
+#endif
 }
