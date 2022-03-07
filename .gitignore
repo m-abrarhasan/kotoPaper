@@ -4,4 +4,5 @@ kotoPaper
 *.out
 *.o
 .vs
+build
 Debug
