@@ -6,3 +6,4 @@
 #include "kotolib/getui_op.hpp"
 #include "kotolib/paper.hpp"
 #include "kotolib/putui.hpp"
+#include "kotolib/input.hpp"

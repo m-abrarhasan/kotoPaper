@@ -15,12 +15,6 @@ add_executable(kotoPaper
 
     kotoPaper.cpp
     kotolib.h
-    kotolib/clear.hpp
-    kotolib/get_enter.hpp
-    kotolib/getui_num.hpp
-    kotolib/getui_op.hpp
-    kotolib/paper.hpp
-    kotolib/putui.hpp
     )
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
