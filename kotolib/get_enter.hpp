@@ -1,8 +1,10 @@
 #pragma once
 #include <iostream>
 
-bool get_enter(std::string _prompt = "") {
-  std::cout << _prompt;
+bool get_enter(std::string _prompt = "")
+{
+  std::cout << "\n"
+            << _prompt;
   getchar();
   char enter = getchar();
 
