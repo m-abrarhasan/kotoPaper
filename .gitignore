@@ -6,3 +6,4 @@ kotoPaper
 .vs
 build
 Debug
+CMakeLists.txt.user
