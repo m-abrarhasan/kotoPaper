@@ -17,6 +17,12 @@ public:
     ~MainWindow();
 
 private slots:
+    void on_button_Koto_clicked();
+
+private slots:
+    void on_cmbox_Media_highlighted(int index);
+
+private slots:
 
     void on_cmbox_Media_activated(int index);
 
