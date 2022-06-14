@@ -10,10 +10,10 @@ MainWindow::MainWindow(QWidget* parent)
 {
     ui->setupUi(this);
 
-    for (Paper val : medias) {
+    for (auto val : medias) {
         ui->cmbox_Media->addItem(QString::fromStdString(val.getName()));
     }
-    for (Paper val : prints) {
+    for (auto val : prints) {
         ui->cmbox_PrintSize->addItem(QString::fromStdString(val.getName()));
     }
 }
