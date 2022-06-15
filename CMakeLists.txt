@@ -23,6 +23,7 @@ set(PROJECT_SOURCES
         paper.cpp
         media.hpp
         prints.hpp
+        calcOffset.hpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

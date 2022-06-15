@@ -9,24 +9,25 @@ class MainWindow;
 }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow {
-    Q_OBJECT
+class MainWindow : public QMainWindow
+{
+  Q_OBJECT
 
 public:
-    MainWindow(QWidget* parent = nullptr);
-    ~MainWindow();
+  MainWindow(QWidget* parent = nullptr);
+  ~MainWindow();
 
 private slots:
-    void on_button_Koto_clicked();
+  void on_button_Koto_clicked();
+  void on_cmbox_Media_activated(int index);
 
-private slots:
-    void on_cmbox_Media_highlighted(int index);
+  void on_spnbox_MediaRate_valueChanged(double arg1);
 
-private slots:
+  void on_cmbox_PrintSize_activated(int index);
 
-    void on_cmbox_Media_activated(int index);
+  void on_spnbox_OrderSize_valueChanged(int arg1);
 
 private:
-    Ui::MainWindow* ui;
+  Ui::MainWindow* ui;
 };
 #endif // MAINWINDOW_H

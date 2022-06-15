@@ -3,11 +3,15 @@
 #include <QApplication>
 #include <QStyleFactory>
 
-int main(int argc, char* argv[])
+int
+main(int argc, char* argv[])
 {
-    QApplication a(argc, argv);
-    MainWindow w;
-    a.setStyle(QStyleFactory::create("Fusion"));
-    w.show();
-    return a.exec();
+  QApplication a(argc, argv);
+  // a.setStyle(QStyleFactory::create("Fusion"));
+
+  MainWindow w;
+  w.setWindowTitle("KotoPaper");
+  w.show();
+
+  return a.exec();
 }

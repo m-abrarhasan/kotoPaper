@@ -1,70 +1,60 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include "calcOffset.hpp"
 #include "media.hpp"
 #include "prints.hpp"
 #include <QDebug>
 
 MainWindow::MainWindow(QWidget* parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+  : QMainWindow(parent)
+  , ui(new Ui::MainWindow)
 {
-    ui->setupUi(this);
+  ui->setupUi(this);
 
-    for (auto val : medias) {
-        ui->cmbox_Media->addItem(QString::fromStdString(val.getName()));
-    }
-    for (auto val : prints) {
-        ui->cmbox_PrintSize->addItem(QString::fromStdString(val.getName()));
-    }
-    ui->spnbox_MediaRate->setMaximum(99999);
-    ui->spnbox_OrderSize->setMaximum(99999);
+  for (auto val : mediaStore) {
+    ui->cmbox_Media->addItem(QString::fromStdString(val.getName()));
+  }
+  for (auto val : printStore) {
+    ui->cmbox_PrintSize->addItem(QString::fromStdString(val.getName()));
+  }
+
+  ui->spnbox_MediaRate->setMaximum(99999);
+  ui->spnbox_OrderSize->setMaximum(99999);
+
+  calcOffset(ui);
 }
 
 MainWindow::~MainWindow()
 {
-    delete ui;
+  delete ui;
 }
 
-void MainWindow::on_cmbox_Media_activated(int index)
+void
+MainWindow::on_cmbox_Media_activated(int index)
 {
-    index = ui->cmbox_Media->currentIndex();
-    qDebug() << QString::fromStdString(medias[index].getName())
-             << " index : "
-             << index
-             << "\n";
+  calcOffset(ui);
 }
 
-void MainWindow::on_cmbox_Media_highlighted(int index)
+void
+MainWindow::on_cmbox_PrintSize_activated(int index)
 {
-    qDebug() << QString::fromStdString(medias[index].getName())
-             << " index : "
-             << index
-             << "\n";
-
+  calcOffset(ui);
 }
 
-
-void MainWindow::on_button_Koto_clicked()
+void
+MainWindow::on_spnbox_MediaRate_valueChanged(double arg1)
 {
-    //Calculation func/class
-    int mediaIndex = ui->cmbox_Media->currentIndex();
-    int printIndex = ui->cmbox_PrintSize->currentIndex();
-    
-    double mediaRate = ui->spnbox_MediaRate->value();
-    double orderSize= ui->spnbox_OrderSize->value();
-    
-    QString strCost = ui->lbl_TotalSheet->text();
-    double test = 34534.53;
-    //Calculation func/class
-
-    strCost.replace("00.00",QString::number(test));
-    ui->lbl_TotalCost->setText(strCost);
-
-    qDebug()<<"\n"
-            <<strCost
-            <<"\n"
-            <<test
-            <<"\n";
-
+  calcOffset(ui);
 }
 
+void
+MainWindow::on_spnbox_OrderSize_valueChanged(int arg1)
+{
+  calcOffset(ui);
+}
+
+void
+MainWindow::on_button_Koto_clicked()
+{
+  calcOffset(ui);
+}
