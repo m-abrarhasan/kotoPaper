@@ -1,19 +1,21 @@
 #include "paper.h"
 
-Paper::Paper(double width, double height, std::string name)
+Paper::Paper(double width, double height, QString name)
 {
-    this->name = name;
-    this->width = width;
-    this->height = height;
-    this->area = width * height;
+  this->name = name;
+  this->width = width;
+  this->height = height;
+  this->area = width * height;
 };
 
-double Paper::getArea()
+double
+Paper::getArea()
 {
-    return area;
+  return area;
 }
 
-std::string Paper::getName()
+QString
+Paper::getName()
 {
-    return name;
+  return name;
 }

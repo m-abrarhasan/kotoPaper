@@ -4,6 +4,7 @@
 #include "media.hpp"
 #include "prints.hpp"
 #include <QDebug>
+#include <QIcon>
 
 MainWindow::MainWindow(QWidget* parent)
   : QMainWindow(parent)
@@ -12,10 +13,10 @@ MainWindow::MainWindow(QWidget* parent)
   ui->setupUi(this);
 
   for (auto val : mediaStore) {
-    ui->cmbox_Media->addItem(QString::fromStdString(val.getName()));
+    ui->cmbox_Media->addItem(val.getName());
   }
   for (auto val : printStore) {
-    ui->cmbox_PrintSize->addItem(QString::fromStdString(val.getName()));
+    ui->cmbox_PrintSize->addItem(val.getName());
   }
 
   ui->spnbox_MediaRate->setMaximum(99999);
@@ -28,6 +29,8 @@ MainWindow::~MainWindow()
 {
   delete ui;
 }
+
+// Slots--
 
 void
 MainWindow::on_cmbox_Media_activated(int index)
