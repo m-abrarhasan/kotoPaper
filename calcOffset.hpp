@@ -21,11 +21,10 @@ calcOffset(Ui::MainWindow* ui)
   ui->lbl_TotalSheet->setText(QString::number(totalSheet));
   ui->lbl_TotalSheet->setStyleSheet(
     "QLabel {font-size : 11pt; font-weight : 700; color:#00aa00;}");
-  qDebug() << "\n"
-           << " :: " << totalSheet << "\n";
+  qDebug() << " :: Total Sheet" << totalSheet << "\n";
 
   ui->lbl_TotalCost->setText(QString::number(totalCost));
   ui->lbl_TotalCost->setStyleSheet(
     "QLabel {font-size : 11pt; font-weight : 700; color:#00aa00;}");
-  qDebug() << " :: " << totalCost << "\n";
+  qDebug() << " :: Total Cost" << totalCost << "\n";
 }
