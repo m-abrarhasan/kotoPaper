@@ -1,6 +1,6 @@
 #pragma once
 #include <QString>
-#include <iostream>
+#include <vector>
 
 class Paper
 {
@@ -11,7 +11,7 @@ private:
   double area;
 
 public:
-  Paper(double width, double height, QString name);
+  Paper(double width, double height, QString name, std::vector<Paper>& store);
 
   double getArea();
   QString getName();
