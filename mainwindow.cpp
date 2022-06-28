@@ -55,9 +55,3 @@ MainWindow::on_spnbox_OrderSize_valueChanged(int arg1)
 {
   calcOffset(ui);
 }
-
-void
-MainWindow::on_button_Koto_clicked()
-{
-  calcOffset(ui);
-}

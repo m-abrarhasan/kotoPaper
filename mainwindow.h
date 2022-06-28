@@ -18,7 +18,6 @@ public:
   ~MainWindow();
 
 private slots:
-  void on_button_Koto_clicked();
   void on_cmbox_Media_activated(int index);
 
   void on_spnbox_MediaRate_valueChanged(double arg1);

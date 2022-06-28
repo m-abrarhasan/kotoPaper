@@ -6,139 +6,136 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>380</width>
-    <height>360</height>
+    <width>342</width>
+    <height>301</height>
    </rect>
-  </property>
-  <property name="minimumSize">
-   <size>
-    <width>380</width>
-    <height>360</height>
-   </size>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>380</width>
-    <height>360</height>
-   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="Line" name="line">
-    <property name="geometry">
-     <rect>
-      <x>0</x>
-      <y>190</y>
-      <width>381</width>
-      <height>20</height>
-     </rect>
+   <layout class="QFormLayout" name="formLayout">
+    <property name="horizontalSpacing">
+     <number>24</number>
     </property>
-    <property name="orientation">
-     <enum>Qt::Horizontal</enum>
+    <property name="verticalSpacing">
+     <number>19</number>
     </property>
-   </widget>
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>20</y>
-      <width>341</width>
-      <height>151</height>
-     </rect>
+    <property name="leftMargin">
+     <number>10</number>
     </property>
-    <layout class="QGridLayout" name="gridLayout_2">
-     <item row="3" column="1">
-      <widget class="QSpinBox" name="spnbox_OrderSize"/>
-     </item>
-     <item row="0" column="1">
-      <widget class="QComboBox" name="cmbox_Media"/>
-     </item>
-     <item row="2" column="1">
-      <widget class="QComboBox" name="cmbox_PrintSize"/>
-     </item>
-     <item row="3" column="0">
-      <widget class="QLabel" name="lbl_OrderSize">
-       <property name="text">
-        <string>Order Size</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="lbl_MediaRate">
-       <property name="text">
-        <string>Media Rate</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="0">
-      <widget class="QLabel" name="lbl_Media">
-       <property name="text">
-        <string>Media</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="lbl_PrintSize">
-       <property name="text">
-        <string>Print Size</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QDoubleSpinBox" name="spnbox_MediaRate"/>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>20</x>
-      <y>230</y>
-      <width>311</width>
-      <height>71</height>
-     </rect>
+    <property name="topMargin">
+     <number>10</number>
     </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0">
-      <widget class="QLabel" name="lbl_TotalSC">
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Total Sheet :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QLabel" name="lbl_TotalSheet">
-       <property name="text">
-        <string>0</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="lbl_TotalSC_3">
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Total Cost :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLabel" name="lbl_TotalCost">
-       <property name="text">
-        <string>0</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="lbl_Media">
+      <property name="text">
+       <string>Media</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QComboBox" name="cmbox_Media"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="lbl_MediaRate">
+      <property name="text">
+       <string>Media Rate</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QDoubleSpinBox" name="spnbox_MediaRate"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="lbl_PrintSize">
+      <property name="text">
+       <string>Print Size</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="cmbox_PrintSize"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="lbl_OrderSize">
+      <property name="text">
+       <string>Order Size</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QSpinBox" name="spnbox_OrderSize"/>
+    </item>
+    <item row="5" column="0" colspan="2">
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+      <property name="spacing">
+       <number>15</number>
+      </property>
+      <item row="0" column="0">
+       <widget class="QLabel" name="lbl_TotalSC">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Total Sheet :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLabel" name="lbl_TotalSheet">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="lbl_TotalSC_3">
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Total Cost :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="lbl_TotalCost">
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="0" colspan="2">
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>380</width>
-     <height>21</height>
+     <width>342</width>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menukotoPaper">
