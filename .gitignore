@@ -8,3 +8,5 @@ build
 Debug
 CMakeLists.txt.user
 *.kdev4
+*.idea
+cmake-build-debug
