@@ -3,7 +3,8 @@ kotoPaper
 *.exe
 *.out
 *.o
-.vs
+*.vs
+*.cache
 build
 Debug
 CMakeLists.txt.user
