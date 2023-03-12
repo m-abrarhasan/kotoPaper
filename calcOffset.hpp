@@ -1,5 +1,4 @@
 #include "./ui_mainwindow.h"
-#include "mainwindow.h"
 #include "media.hpp"
 #include "prints.hpp"
 #include <QDebug>
