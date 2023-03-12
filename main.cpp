@@ -3,18 +3,17 @@
 #include <QApplication>
 #include <QStyleFactory>
 
-int
-main(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
-  QApplication a(argc, argv);
-  a.setStyle(QStyleFactory::create("Fusion"));
+    QApplication app(argc, argv);
+    app.setStyle(QStyleFactory::create("Fusion"));
 
-  QIcon* icn = new QIcon("://Resources/kotoPaper.ico");
-  a.setWindowIcon(*icn);
+    QIcon* icon = new QIcon("://Resources/kotoPaper.ico");
+    app.setWindowIcon(*icon);
 
-  MainWindow w;
-  w.setWindowTitle("KotoPaper");
-  w.show();
+    MainWindow base;
+    base.setWindowTitle("KotoPaper");
+    base.show();
 
-  return a.exec();
+    return app.exec();
 }
